@@ -3,7 +3,8 @@
 	"version": "0.0.1",
 	"description": "InfoSec project for freeCodeCamp",
 	"scripts": {
-		"start": "nodemon server.js"
+		"start": "npm run start",
+		"dev": "nodemon server.js"
 	},
 	"dependencies": {
 		"body-parser": "^1.15.2",
