@@ -5,6 +5,7 @@ document.getElementById('testForm2').addEventListener('submit', e => {
   fetch(`/api/stock-prices/?stock=${stock}&like=${checkbox}`)
     .then(res => res.json())
     .then(data => {
+      console.log(data);
       document.getElementById('jsonResult').innerText = JSON.stringify(data);
     });
 });
